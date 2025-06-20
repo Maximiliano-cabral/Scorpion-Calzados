@@ -47,6 +47,7 @@
             text-align: center;
             color: rgba(0, 0, 0, 0.877);
             gap: 10px;
+
             span {
                 color: rgb(116, 50, 136);
             }
@@ -71,6 +72,11 @@
     grid-auto-rows: 200px;
     gap: 5px;
     padding: 20px;
+    transition: 1s;
+
+    & img:hover {
+        transform: scale(1.1);
+    }
 
     img {
         width: 100%;

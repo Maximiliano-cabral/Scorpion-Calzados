@@ -89,6 +89,10 @@ header nav.navbar {
   grid-auto-rows: 200px;
   gap: 5px;
   padding: 20px;
+  transition: 1s;
+}
+.grid-container img:hover {
+  transform: scale(1.1);
 }
 .grid-container img {
   width: 100%;
