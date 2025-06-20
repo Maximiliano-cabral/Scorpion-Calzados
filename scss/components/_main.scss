@@ -1,17 +1,20 @@
 .hero {
+    background-image: url(../img/nike.png);
+    width: 100%;
+    height: 620px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 
     h2 {
-        background-image: url(../img/nike.png);
-        width: 100%;
-        height: 620px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+        font-size: 35px;
+        margin-top: 10%;
+        ;
     }
 
     p {
@@ -61,28 +64,26 @@
     gap: 5px;
     padding: 20px;
 
-    .grid-item {
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-        &.img-rosa {
-            grid-column: span 2;
-        }
+    .img-rosa {
+        grid-column: span 2;
+    }
 
-        &.img-marro {
-            grid-row: span 3;
-        }
+    .img-marro {
+        grid-row: span 3;
+    }
 
-        &.img-camina {
-            grid-row: span 2;
-        }
+    .img-camina {
+        grid-row: span 2;
+    }
 
-        &.img-hombre {
-            grid-row: span 3;
-        }
+    .img-hombre {
+        grid-row: span 3;
     }
 }
 
