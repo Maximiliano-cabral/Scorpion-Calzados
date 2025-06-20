@@ -1,0 +1,17 @@
+header {
+    background-color: #d8d8d8;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    position: sticky;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    nav.navbar {
+        background-color: #d8d8d8 !important;
+    }
+}
