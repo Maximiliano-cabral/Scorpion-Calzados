@@ -26,7 +26,7 @@ header nav.navbar {
 }
 
 .hero {
-  background-image: url(../img/nike.png);
+  background-image: linear-gradient(rgba(170, 184, 193, 0.1019607843), rgba(207, 217, 223, 0.1568627451)), url(../img/nike.png);
   width: 100%;
   height: 620px;
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@ header nav.navbar {
 }
 .hero h2 {
   font-size: 35px;
-  margin-top: 10%;
+  margin-top: 12%;
 }
 .hero p {
   font-size: 27px;
@@ -51,6 +51,9 @@ header nav.navbar {
   color: black;
   font-size: 19px;
   margin-top: 30px;
+  border: 2px solid black;
+  padding: 10px 10px;
+  border-radius: 8px;
 }
 
 .bienvenidos {
@@ -66,6 +69,9 @@ header nav.navbar {
   text-align: center;
   color: rgba(0, 0, 0, 0.877);
   gap: 10px;
+}
+.bienvenidos div h2 span {
+  color: rgb(116, 50, 136);
 }
 .bienvenidos img {
   justify-content: right;
