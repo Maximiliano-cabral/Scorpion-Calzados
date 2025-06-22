@@ -122,7 +122,6 @@ footer {
   background-color: black;
   display: flex;
   justify-content: center;
-  text-align: center;
   padding: 30px;
   gap: 30px;
   margin: 20px;
@@ -159,6 +158,12 @@ footer .info p {
 footer .logos h3 {
   color: yellowgreen;
   font-size: 22px;
+}
+footer .logos a {
+  display: inline-block;
+}
+footer .logos a img {
+  background-color: white;
 }
 
 /*# sourceMappingURL=estilos.css.map */
