@@ -1,17 +1,57 @@
-footer {
-    margin: 25px;
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
     text-align: center;
-
-    p {
-        text-align: center;
-        font-size: 25px;
+    padding: 30px;
+    gap: 30px;
+    margin: 20px;
+    .texto{
+        h3{
+            color: whitesmoke;
+            font-size: 22px; 
+        }
+        p{
+            color: whitesmoke;
+            font-size: 12px;            
+            margin-top: 15px;
+        }
     }
+    .enlaces{
+        h3{
+            color: yellowgreen;
+            font-size: 22px;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+    }
+    .info{
+        h3{
+            font-size: 22px;
+            color: yellowgreen;
+        }
+        p{
+            color: whitesmoke;
+            font-size: 12px;
+            margin: 0%;
+        }
+    }
+    .logos{
+        
+        h3{
+            color: yellowgreen;
+            font-size: 22px;
+        }
+        a{
 
-    a {
-        margin: 4px;
+            img{
 
-        img {
-            width: 30px;
+            }
         }
     }
 }

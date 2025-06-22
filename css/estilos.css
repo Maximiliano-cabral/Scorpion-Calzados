@@ -119,18 +119,46 @@ header nav.navbar {
 }
 
 footer {
-  margin: 25px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  padding: 30px;
+  gap: 30px;
+  margin: 20px;
 }
-footer p {
-  text-align: center;
-  font-size: 25px;
+footer .texto h3 {
+  color: whitesmoke;
+  font-size: 22px;
 }
-footer a {
-  margin: 4px;
+footer .texto p {
+  color: whitesmoke;
+  font-size: 12px;
+  margin-top: 15px;
 }
-footer a img {
-  width: 30px;
+footer .enlaces h3 {
+  color: yellowgreen;
+  font-size: 22px;
+}
+footer .enlaces a {
+  display: block;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+footer .info h3 {
+  font-size: 22px;
+  color: yellowgreen;
+}
+footer .info p {
+  color: whitesmoke;
+  font-size: 12px;
+  margin: 0%;
+}
+footer .logos h3 {
+  color: yellowgreen;
+  font-size: 22px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
