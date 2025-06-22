@@ -118,6 +118,13 @@ header nav.navbar {
   bottom: 20px;
 }
 
+/*---- Mujer ----*/
+.mujer {
+  width: 100%;
+  height: 500px;
+  background-image: url(../../img/mujer.jpg);
+}
+
 footer {
   background-color: black;
   display: flex;
