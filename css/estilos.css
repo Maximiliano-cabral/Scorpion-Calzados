@@ -26,7 +26,7 @@ header nav.navbar {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(170, 184, 193, 0.1019607843), rgba(207, 217, 223, 0.1568627451)), url(../img/nike.png);
+  background-image: linear-gradient(to left, rgba(1, 1, 1, 0.603) 10%, rgba(1, 1, 1, 0.733) 51%, rgba(1, 1, 1, 0.2) 100%), url(../img/nike.png);
   width: 100%;
   height: 620px;
   background-repeat: no-repeat;
@@ -41,17 +41,19 @@ header nav.navbar {
 .hero h2 {
   font-size: 35px;
   margin-top: 12%;
+  color: white;
 }
 .hero p {
   font-size: 27px;
   margin-bottom: 0%;
+  color: white;
 }
 .hero a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 19px;
   margin-top: 30px;
-  border: 2px solid black;
+  border: 2px solid white;
   padding: 10px 10px;
   border-radius: 8px;
 }
@@ -67,7 +69,7 @@ header nav.navbar {
 }
 .bienvenidos div h2 {
   text-align: center;
-  color: rgba(0, 0, 0, 0.877);
+  color: rgb(19, 19, 19) 0, 0, 0, 0.877;
   gap: 10px;
 }
 .bienvenidos div h2 span {
@@ -199,7 +201,7 @@ footer {
   justify-content: center;
   padding: 30px;
   gap: 30px;
-  margin: 20px;
+  margin-top: 20px;
 }
 footer .texto h3 {
   color: whitesmoke;
@@ -230,15 +232,19 @@ footer .info p {
   font-size: 12px;
   margin: 0%;
 }
+footer .logos {
+  justify-items: center;
+}
 footer .logos h3 {
   color: yellowgreen;
   font-size: 22px;
 }
 footer .logos a {
-  display: inline-block;
+  text-decoration: none;
 }
 footer .logos a img {
-  background-color: white;
+  width: 30px;
+  margin: 30px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

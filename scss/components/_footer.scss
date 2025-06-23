@@ -1,27 +1,31 @@
-footer{
+footer {
     background-color: black;
     display: flex;
     justify-content: center;
     padding: 30px;
     gap: 30px;
-    margin: 20px;
-    .texto{
-        h3{
+    margin-top: 20px;
+
+    .texto {
+        h3 {
             color: whitesmoke;
-            font-size: 22px; 
+            font-size: 22px;
         }
-        p{
+
+        p {
             color: whitesmoke;
-            font-size: 12px;            
+            font-size: 12px;
             margin-top: 15px;
         }
     }
-    .enlaces{
-        h3{
+
+    .enlaces {
+        h3 {
             color: yellowgreen;
             font-size: 22px;
         }
-        a{
+
+        a {
             display: block;
             text-decoration: none;
             color: whitesmoke;
@@ -29,28 +33,32 @@ footer{
             margin-bottom: 8px;
         }
     }
-    .info{
-        h3{
+
+    .info {
+        h3 {
             font-size: 22px;
             color: yellowgreen;
         }
-        p{
+
+        p {
             color: whitesmoke;
             font-size: 12px;
             margin: 0%;
         }
     }
-    .logos{
-        
-        h3{
+
+    .logos {
+        justify-items: center;
+        h3 {
             color: yellowgreen;
             font-size: 22px;
         }
         a{
-            display: inline-block;
+            text-decoration: none;
             img{
-                background-color: white;
-            }    
+                width: 30px;
+                margin: 30px;
+            }
         }
     }
 }
