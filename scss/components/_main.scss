@@ -46,8 +46,8 @@
 
         h2 {
             text-align: center;
-            color: rgb(19, 19, 19) (0, 0, 0, 0.877);
-            gap: 10px;
+            color: black;
+            margin: 10px;
 
             span {
                 color: rgb(101, 89, 134);
@@ -75,7 +75,7 @@
     padding: 20px;
     transition: 1s;
 
-    & img:hover {
+    img:hover {
         transform: scale(1.1);
     }
 
