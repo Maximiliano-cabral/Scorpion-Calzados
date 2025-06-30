@@ -125,7 +125,7 @@ header nav.navbar {
   bottom: 20px;
 }
 
-/*---- Hombre ---*/
+/*---- HOMBRE INDEX ---*/
 .pro {
   text-align: center;
 }
@@ -178,7 +178,7 @@ header nav.navbar {
   background-color: rgb(151, 185, 185);
 }
 
-/*---- Mujer ----*/
+/*---- MUJER PAG ----*/
 .mujer {
   width: 100%;
   height: 520px;
@@ -251,6 +251,80 @@ header nav.navbar {
 }
 .productos div article a:hover {
   background-color: rgba(46, 17, 92, 0.315);
+}
+
+/* --- HOMBRE PAG ---*/
+.men {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(90deg, rgba(20, 20, 20, 0.527) 0%, rgba(23, 24, 23, 0.664) 50%, rgba(0, 0, 0, 0.76) 100%), url(../img/feet.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  object-fit: cover;
+}
+.men h2 {
+  color: white;
+  font-size: 64px;
+  font-style: italic;
+  border: 2px solid whitesmoke;
+  padding: 20px;
+}
+.men p {
+  color: white;
+  font-size: 22px;
+}
+
+.men-producto h3 {
+  text-align: center;
+  font-size: 35px;
+  padding: 35px;
+}
+.men-producto div {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  padding: 15px;
+}
+.men-producto div article {
+  text-align: center;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  transition: 1s;
+  background-color: rgba(10, 10, 10, 0.322);
+}
+.men-producto div article img {
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+}
+.men-producto div article p {
+  margin: 10px;
+}
+.men-producto div article a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+.men-producto div article:hover {
+  transform: scale(1.1);
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+.banner img {
+  width: auto;
+  height: 45vh;
 }
 
 footer {

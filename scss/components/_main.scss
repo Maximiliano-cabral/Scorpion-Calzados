@@ -114,7 +114,7 @@
     bottom: 20px;
 }
 
-/*---- Hombre ---*/
+/*---- HOMBRE INDEX ---*/
 .pro {
     text-align: center;
 
@@ -140,7 +140,7 @@
                 border-radius: 8px;
                 margin-bottom: 10px;
             }
-           
+
             a {
                 text-decoration: none;
                 color: black;
@@ -149,8 +149,9 @@
                 padding: 3px;
                 transition: 1s;
             }
+
             a:hover {
-                background-color:  rgb(151, 185, 185);
+                background-color: rgb(151, 185, 185);
             }
         }
 
@@ -170,14 +171,15 @@
                 padding: 3px;
                 transition: 1s;
             }
+
             a:hover {
-                background-color:  rgb(151, 185, 185);
+                background-color: rgb(151, 185, 185);
             }
         }
     }
 }
 
-/*---- Mujer ----*/
+/*---- MUJER PAG ----*/
 .mujer {
     width: 100%;
     height: 520px;
@@ -264,5 +266,89 @@
             }
 
         }
+    }
+}
+
+/* --- HOMBRE PAG ---*/
+.men {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(20, 20, 20, 0.527) 0%, rgba(23, 24, 23, 0.664) 50%, rgba(0, 0, 0, 0.76) 100%), url(../img/feet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    object-fit: cover;
+
+    h2 {
+        color: white;
+        font-size: 64px;
+        font-style: italic;
+        border: 2px solid whitesmoke;
+        padding: 20px;
+    }
+
+    p {
+        color: white;
+        font-size: 22px;
+    }
+}
+
+.men-producto {
+    h3 {
+        text-align: center;
+        font-size: 35px;
+        padding: 35px;
+    }
+
+    div {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        padding: 15px;
+
+        article {
+            text-align: center;
+            padding: 10px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            transition: 1s;
+            background-color: rgba(10, 10, 10, 0.322);
+
+            img {
+                width: 350px;
+                height: 450px;
+                border-radius: 10px;
+            }
+
+            p {
+                margin: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                margin: 10px;
+                border: 1px solid black;
+                padding: 5px;
+                border-radius: 5px;
+            }
+        }
+
+        article:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+    img {
+        width: auto;
+        height: 45vh;
     }
 }
