@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-color: #d8d8d8;
+  background-color: #f9ebea;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -22,13 +22,13 @@ header a {
   color: black;
 }
 header nav.navbar {
-  background-color: #d8d8d8 !important;
+  background-color: #f9ebea !important;
 }
 
 .hero {
-  background-image: linear-gradient(to left, rgba(1, 1, 1, 0.603) 10%, rgba(1, 1, 1, 0.733) 51%, rgba(1, 1, 1, 0.2) 100%), url(../img/nike.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.26)), url(../img/hero-1.jpg);
   width: 100%;
-  height: 620px;
+  height: 720px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -40,19 +40,21 @@ header nav.navbar {
   flex-wrap: wrap;
 }
 .hero h2 {
-  font-size: 35px;
-  margin-top: 12%;
+  font-size: 3em;
+  margin-top: 8%;
   color: white;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 .hero p {
-  font-size: 27px;
+  font-size: 2em;
   margin-bottom: 0%;
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 .hero a {
   text-decoration: none;
   color: white;
-  font-size: 19px;
+  font-size: 1em;
   margin-top: 30px;
   border: 2px solid white;
   padding: 10px 10px;
@@ -60,7 +62,7 @@ header nav.navbar {
   transition: 1s;
 }
 .hero a:hover {
-  background-color: rgb(151, 185, 185);
+  background-color: rgba(123, 79, 61, 0.8470588235);
 }
 
 .bienvenidos {
@@ -78,16 +80,19 @@ header nav.navbar {
   margin: 10px;
 }
 .bienvenidos div h2 span {
-  color: rgb(101, 89, 134);
+  color: #55291e;
 }
 .bienvenidos img {
   justify-content: right;
   width: 450px;
   height: 550px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .visto h2 {
   text-align: center;
+  margin-top: 2em;
 }
 
 .grid-container {
@@ -105,6 +110,7 @@ header nav.navbar {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 .grid-container .img-rosa {
   grid-column: span 2;
@@ -131,51 +137,40 @@ header nav.navbar {
 }
 .pro h2 {
   text-align: center;
-  background-color: black;
-  color: whitesmoke;
+  color: black;
   padding: 16px;
 }
 .pro .tarjetas {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
+  margin-top: 2em;
 }
-.pro .tarjetas .hombress img {
-  width: 100%;
-  height: 700px;
-  text-decoration: none;
-  color: black;
-  font-size: 15px;
+.pro .tarjetas .tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.pro .tarjetas .tarjeta img {
+  width: auto;
+  height: 500px;
   border-radius: 8px;
   margin-bottom: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
-.pro .tarjetas .hombress a {
+.pro .tarjetas .tarjeta a {
+  margin-top: 10px;
   text-decoration: none;
   color: black;
   font-size: 15px;
   border: 2px solid black;
-  padding: 3px;
+  padding: 5px 12px;
+  border-radius: 5px;
   transition: 1s;
 }
-.pro .tarjetas .hombress a:hover {
-  background-color: rgb(151, 185, 185);
-}
-.pro .tarjetas .mujeress img {
-  width: 100%;
-  height: 700px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-.pro .tarjetas .mujeress a {
-  text-decoration: none;
-  color: black;
-  font-size: 15px;
-  border: 2px solid black;
-  padding: 3px;
-  transition: 1s;
-}
-.pro .tarjetas .mujeress a:hover {
-  background-color: rgb(151, 185, 185);
+.pro .tarjetas .tarjeta a:hover {
+  background-color: rgba(123, 79, 61, 0.8470588235);
 }
 
 /*---- MUJER PAG ----*/
@@ -327,8 +322,78 @@ header nav.navbar {
   height: 45vh;
 }
 
+/* SOBRE NOSOTROS */
+.nosotros h2 {
+  text-align: center;
+  margin-top: 2em;
+}
+.nosotros .contenido-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em;
+}
+.nosotros .contenido-nosotros img {
+  width: auto;
+  height: 600px;
+  border-radius: 15px;
+  margin: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.nosotros .texto {
+  text-align: center;
+  width: 40%;
+}
+.nosotros .texto h3 {
+  font-size: 2em;
+}
+.nosotros .texto p {
+  font-size: 1em;
+  margin-bottom: 40px;
+}
+.nosotros .texto a {
+  text-decoration: none;
+  padding: 10px 10px;
+  color: black;
+  background-color: #f9ebea;
+  border-radius: 20px;
+  transition: 1s;
+}
+.nosotros a:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.crecimiento {
+  background-image: linear-gradient(90deg, rgb(222, 209, 209) 0%, rgb(161, 114, 114) 50%, rgb(161, 119, 106) 100%);
+  margin: 10px;
+  padding: 6rem;
+}
+.crecimiento h3 {
+  text-align: center;
+  color: white;
+}
+.crecimiento div {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+.crecimiento div h4 {
+  margin: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.ubi {
+  text-align: center;
+  margin-top: 3em;
+}
+.ubi h3 {
+  margin-bottom: 2em;
+}
+
 footer {
-  background-color: black;
+  background-color: #f9ebea;
   display: flex;
   justify-content: center;
   padding: 30px;
@@ -336,31 +401,31 @@ footer {
   margin-top: 20px;
 }
 footer .texto h3 {
-  color: whitesmoke;
+  color: black;
   font-size: 22px;
 }
 footer .texto p {
-  color: whitesmoke;
+  color: black;
   font-size: 12px;
   margin-top: 15px;
 }
 footer .enlaces h3 {
-  color: yellowgreen;
+  color: #641e16;
   font-size: 22px;
 }
 footer .enlaces a {
   display: block;
   text-decoration: none;
-  color: whitesmoke;
+  color: black;
   font-size: 12px;
   margin-bottom: 8px;
 }
 footer .info h3 {
   font-size: 22px;
-  color: yellowgreen;
+  color: #641e16;
 }
 footer .info p {
-  color: whitesmoke;
+  color: black;
   font-size: 12px;
   margin: 0%;
 }
@@ -368,7 +433,7 @@ footer .logos {
   justify-items: center;
 }
 footer .logos h3 {
-  color: yellowgreen;
+  color: #641e16;
   font-size: 22px;
 }
 footer .logos a {

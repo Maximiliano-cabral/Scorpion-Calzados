@@ -1,5 +1,5 @@
 footer {
-    background-color: black;
+    background-color: #f9ebea;
     display: flex;
     justify-content: center;
     padding: 30px;
@@ -8,12 +8,12 @@ footer {
 
     .texto {
         h3 {
-            color: whitesmoke;
+            color: black;
             font-size: 22px;
         }
 
         p {
-            color: whitesmoke;
+            color: black;
             font-size: 12px;
             margin-top: 15px;
         }
@@ -21,14 +21,14 @@ footer {
 
     .enlaces {
         h3 {
-            color: yellowgreen;
+            color:#641e16;
             font-size: 22px;
         }
 
         a {
             display: block;
             text-decoration: none;
-            color: whitesmoke;
+            color: black;
             font-size: 12px;
             margin-bottom: 8px;
         }
@@ -37,11 +37,11 @@ footer {
     .info {
         h3 {
             font-size: 22px;
-            color: yellowgreen;
+            color: #641e16;
         }
 
         p {
-            color: whitesmoke;
+            color: black;
             font-size: 12px;
             margin: 0%;
         }
@@ -50,7 +50,7 @@ footer {
     .logos {
         justify-items: center;
         h3 {
-            color: yellowgreen;
+            color: #641e16;
             font-size: 22px;
         }
         a{
