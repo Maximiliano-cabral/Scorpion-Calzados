@@ -131,7 +131,7 @@ header nav.navbar {
   bottom: 20px;
 }
 
-/*---- HOMBRE INDEX ---*/
+/*---- TARJETA HOMBRE/MUJER  INDEX  ---*/
 .pro {
   text-align: center;
 }
@@ -151,11 +151,12 @@ header nav.navbar {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  transition: 1s;
 }
 .pro .tarjetas .tarjeta img {
   width: auto;
   height: 500px;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -164,20 +165,22 @@ header nav.navbar {
   text-decoration: none;
   color: black;
   font-size: 15px;
-  border: 2px solid black;
-  padding: 5px 12px;
-  border-radius: 5px;
+  padding: 8px;
   transition: 1s;
 }
 .pro .tarjetas .tarjeta a:hover {
   background-color: rgba(123, 79, 61, 0.8470588235);
+  border-radius: 20px;
+}
+.pro .tarjetas article:hover {
+  transform: scale(1.1);
 }
 
 /*---- MUJER PAG ----*/
 .mujer {
   width: 100%;
-  height: 520px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.151), rgba(255, 255, 255, 0.205)), url(../img/medium.jpg);
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.445)), url(../img/mujer-pag.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -186,22 +189,26 @@ header nav.navbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  justify-items: center;
   flex-wrap: wrap;
 }
 .mujer h2 {
-  font-size: 33px;
-  color: black;
+  font-size: 3em;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 0 auto;
 }
 .mujer p {
-  font-size: 22px;
-  color: black;
-  margin-top: 70px;
+  font-size: 1.2em;
+  color: white;
+  margin-top: 10px;
 }
 
 .pagos {
   justify-items: center;
-  margin: 10px;
+  margin-top: 3em;
 }
 .pagos h2 {
   text-align: center;
@@ -212,40 +219,40 @@ header nav.navbar {
 
 .productos h3 {
   text-align: center;
-  background-color: black;
   font-size: 35px;
   padding: 20px;
-  color: white;
+  color: black;
 }
 .productos div {
   display: flex;
   justify-content: center;
   padding: 23px;
-  gap: 15px;
+  gap: 25px;
   margin: 10px;
   text-align: center;
-  transition: 1s;
-}
-.productos div article:hover {
-  transform: scale(1.1);
 }
 .productos div article {
   margin-top: 20px;
+  transition: 1s;
 }
 .productos div article img {
   width: 350px;
   height: 450px;
   border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 .productos div article a {
-  background-color: black;
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 8px;
   transition: 1s;
 }
 .productos div article a:hover {
-  background-color: rgba(46, 17, 92, 0.315);
+  background-color: rgba(123, 79, 61, 0.8470588235);
+  border-radius: 20px;
+}
+.productos div article:hover {
+  transform: scale(1.1);
 }
 
 /* --- HOMBRE PAG ---*/
@@ -287,10 +294,8 @@ header nav.navbar {
 .men-producto div article {
   text-align: center;
   padding: 10px;
-  border: 2px solid gray;
   border-radius: 10px;
   transition: 1s;
-  background-color: rgba(10, 10, 10, 0.322);
 }
 .men-producto div article img {
   width: 350px;
@@ -304,9 +309,12 @@ header nav.navbar {
   text-decoration: none;
   color: black;
   margin: 10px;
-  border: 1px solid black;
   padding: 5px;
-  border-radius: 5px;
+  transition: 1s;
+}
+.men-producto div article a:hover {
+  background-color: rgba(123, 79, 61, 0.8470588235);
+  border-radius: 20px;
 }
 .men-producto div article:hover {
   transform: scale(1.1);
@@ -322,7 +330,7 @@ header nav.navbar {
   height: 45vh;
 }
 
-/* SOBRE NOSOTROS */
+/*--- SOBRE NOSOTROS ---*/
 .nosotros h2 {
   text-align: center;
   margin-top: 2em;
@@ -392,6 +400,65 @@ header nav.navbar {
   margin-bottom: 2em;
 }
 
+/*--- ACCESORIOS ---*/
+.acc {
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.623)), url(../img/shoes-.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.acc h4 {
+  color: white;
+  font-size: 7em;
+  text-align: left;
+  margin: 20px;
+}
+.acc p {
+  color: white;
+  font-size: 2em;
+  text-align: left;
+  margin: 20px;
+}
+
+.titulo h4 {
+  text-align: center;
+  color: black;
+  font-size: 3em;
+  margin-top: 20px;
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 200px;
+  gap: 5px;
+  margin-top: 20px;
+}
+.grids img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 5px;
+}
+.grids .gris {
+  grid-row: span 4;
+}
+.grids .rosas {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+.grids .planti {
+  grid-column: span 1;
+}
+
 footer {
   background-color: #f9ebea;
   display: flex;
@@ -444,99 +511,63 @@ footer .logos a img {
   margin: 30px;
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 851px) {
   .hero h2 {
-    font-size: 25px;
-    margin-top: 12%;
-    color: white;
+    font-size: 2em;
+    margin-top: 8%;
   }
   .hero p {
-    font-size: 17px;
+    font-size: 1em;
     margin-bottom: 0%;
-    color: white;
   }
   .hero a {
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-    margin-top: 30px;
-    border: 2px solid white;
-    padding: 10px 10px;
-    border-radius: 8px;
+    font-size: 0, 5em;
+  }
+}
+@media screen and (max-width: 579px) {
+  .hero h2 {
+    font-size: 1, 2em;
+    margin-top: 8%;
   }
 }
 /* BIENVENIDOS */
-@media screen and (max-width: 1036px) {
+@media screen and (max-width: 1123px) {
+  .bienvenidos div {
+    width: 40%;
+  }
+  .bienvenidos img {
+    width: 400px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 881px) {
+  .bienvenidos div {
+    width: 35%;
+  }
+  .bienvenidos img {
+    width: 350px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 669px) {
   .bienvenidos {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 35px;
+    flex-direction: column;
   }
   .bienvenidos div {
     width: 35%;
   }
-  .bienvenidos div h2 {
-    text-align: center;
-    color: black;
-    margin: 10px;
-  }
-  .bienvenidos div h2 span {
-    color: rgb(101, 89, 134);
-  }
   .bienvenidos img {
-    justify-content: right;
     width: 350px;
-    height: 450px;
+    height: 400px;
   }
 }
-@media screen and (max-width: 806px) {
-  .bienvenidos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 35px;
-  }
+@media screen and (max-width: 379px) {
   .bienvenidos div {
-    width: 45%;
-  }
-  .bienvenidos div h2 {
-    text-align: center;
-    color: black;
-    margin: 10px;
-  }
-  .bienvenidos div h2 span {
-    color: rgb(101, 89, 134);
+    width: 35%;
   }
   .bienvenidos img {
-    justify-content: right;
-    width: 350px;
-    height: 450px;
-  }
-}
-@media screen and (max-width: 538px) {
-  .bienvenidos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 35px;
-  }
-  .bienvenidos div {
-    width: 45%;
-  }
-  .bienvenidos div h2 {
-    text-align: center;
-    font-size: 18px;
-    color: black;
-    margin: 10px;
-  }
-  .bienvenidos div h2 span {
-    color: rgb(101, 89, 134);
-  }
-  .bienvenidos img {
-    justify-content: right;
-    width: 350px;
-    height: 450px;
+    width: 250px;
+    height: 300px;
   }
 }
 /* GRIDS */
@@ -646,43 +677,26 @@ footer .logos a img {
 /* FOOTER */
 @media screen and (max-width: 771px) {
   footer .texto h3 {
-    color: black;
     font-size: 17px;
   }
   footer .texto p {
-    color: black;
     font-size: 8px;
-    margin-top: 15px;
   }
   footer .enlaces h3 {
-    color: #641e16;
     font-size: 17px;
   }
   footer .enlaces a {
-    display: block;
-    text-decoration: none;
-    color: black;
     font-size: 8px;
     margin-bottom: 8px;
   }
   footer .info h3 {
     font-size: 17px;
-    color: #641e16;
   }
   footer .info p {
-    color: black;
     font-size: 8px;
-    margin: 0%;
-  }
-  footer .logos {
-    justify-items: center;
   }
   footer .logos h3 {
-    color: #641e16;
     font-size: 17px;
-  }
-  footer .logos a {
-    text-decoration: none;
   }
   footer .logos a img {
     width: 20px;
@@ -725,90 +739,142 @@ footer .logos a img {
     margin: 4px;
   }
 }
-/* PAG PRODUCTOS */
-@media screen and (max-width: 1475px) {
+/* PAG MUJER */
+@media screen and (max-width: 1842px) {
+  .mujer p {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1481px) {
   .productos div article img {
     width: 300px;
     height: 400px;
     border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   }
 }
-@media screen and (max-width: 1297px) {
+@media screen and (max-width: 1283px) {
   .productos div article img {
     width: 250px;
     height: 350px;
-    border-radius: 10px;
   }
 }
-@media screen and (max-width: 1095px) {
+@media screen and (max-width: 1074px) {
+  .mujer h2 {
+    font-size: 2em;
+  }
+  .mujer p {
+    font-size: 0.8em;
+  }
   .productos div article img {
     width: 200px;
     height: 300px;
-    border-radius: 10px;
   }
 }
-@media screen and (max-width: 923px) {
+@media screen and (max-width: 864px) {
+  .mujer h2 {
+    font-size: 1.7em;
+  }
+  .mujer p {
+    font-size: 0.6em;
+  }
   .productos div article img {
     width: 150px;
     height: 250px;
-    border-radius: 10px;
   }
 }
-@media screen and (max-width: 705px) {
+@media screen and (max-width: 676px) {
+  .mujer h2 {
+    font-size: 1.3em;
+  }
+  .mujer p {
+    font-size: 0.4em;
+  }
   .productos div {
-    display: inline;
+    flex-direction: column;
   }
   .productos div article img {
     width: 150px;
     height: 250px;
-    border-radius: 10px;
   }
 }
-/* MEDIOS DE PAGOS */
-@media screen and (max-width: 593px) {
+@media screen and (max-width: 559px) {
+  .mujer h2 {
+    font-size: 0.9em;
+  }
+  .mujer p {
+    font-size: 0.4em;
+  }
   .pagos div img {
     margin: 15px;
     width: 70px;
     height: 70px;
   }
 }
+/* PAG NOSOTROS */
+@media screen and (max-width: 1042px) {
+  .nosotros .contenido-nosotros {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 658px) {
+  .nosotros .contenido-nosotros img {
+    width: auto;
+    height: 500px;
+  }
+  .nosotros .texto {
+    width: 50%;
+  }
+  .nosotros .texto h3 {
+    font-size: 1.5em;
+  }
+  .nosotros .texto p {
+    font-size: 0.8em;
+  }
+  .nosotros .texto a {
+    font-size: 0.9em;
+  }
+  .crecimiento {
+    padding: 3.5rem;
+  }
+  .crecimiento div h4 {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 498px) {
+  .nosotros .contenido-nosotros img {
+    width: auto;
+    height: 350px;
+  }
+  .nosotros .texto {
+    width: 65%;
+  }
+  .nosotros .texto a {
+    font-size: 0.7em;
+  }
+  .crecimiento {
+    padding: 3.5rem;
+  }
+  .crecimiento div h4 {
+    font-size: 0.9em;
+  }
+}
 @media screen and (max-width: 395px) {
-  .pagos div img {
-    margin: 15px;
-    width: 50px;
-    height: 50px;
+  .nosotros .contenido-nosotros img {
+    width: auto;
+    height: 275px;
+  }
+  .crecimiento {
+    padding: 2.5rem;
+  }
+  .crecimiento div h4 {
+    font-size: 0.7em;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 3em;
   }
 }
-/* BACKGROUND MUJER */
-@media screen and (max-width: 1045px) {
-  .mujer {
-    width: 100%;
-    height: 450px;
-  }
-  .mujer h2 {
-    font-size: 27px;
-    color: black;
-  }
-  .mujer p {
-    font-size: 17px;
-    color: black;
-    margin-top: 70px;
-  }
-}
-@media screen and (max-width: 439px) {
-  .mujer {
-    width: 100%;
-    height: 450px;
-  }
-  .mujer h2 {
-    font-size: 20px;
-    color: black;
-  }
-  .mujer p {
-    font-size: 12px;
-    color: black;
-    margin-top: 70px;
-  }
-}
+/* PAG HOMBRE */
 
 /*# sourceMappingURL=estilos.css.map */
