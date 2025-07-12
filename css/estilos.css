@@ -444,8 +444,9 @@ header nav.navbar {
 .titulo h4 {
   text-align: center;
   color: black;
+  background-color: #f9ebea;
   font-size: 3em;
-  margin-top: 20px;
+  padding: 27px;
 }
 
 .grids {
@@ -453,7 +454,6 @@ header nav.navbar {
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 200px;
   gap: 5px;
-  margin-top: 20px;
 }
 .grids img {
   width: 100%;
@@ -906,7 +906,7 @@ footer .logos a img {
 }
 @media screen and (max-width: 860px) {
   .men h2 {
-    font-size: 27px;
+    font-size: 20px;
   }
   .men p {
     font-size: 10px;
@@ -940,10 +940,10 @@ footer .logos a img {
 }
 @media screen and (max-width: 656px) {
   .men h2 {
-    font-size: 27px;
+    font-size: 17px;
   }
   .men p {
-    font-size: 10px;
+    font-size: 8px;
   }
   .men-producto div article img {
     width: 180px;
@@ -955,6 +955,10 @@ footer .logos a img {
   }
 }
 @media screen and (max-width: 524px) {
+  .men h2 {
+    font-size: 17px;
+    padding: 10px;
+  }
   .banner img {
     width: 350px;
     height: 25vh;
@@ -1036,6 +1040,90 @@ footer .logos a img {
     color: white;
     text-align: center;
     margin-top: 3em;
+  }
+}
+/* PAG ACCESORIOS */
+@media screen and (max-width: 1212px) {
+  .acc h4 {
+    font-size: 4em;
+  }
+  .acc p {
+    font-size: 1.5em;
+  }
+  .grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 150px;
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 944px) {
+  .acc h4 {
+    font-size: 4em;
+  }
+  .acc p {
+    font-size: 1.5em;
+  }
+  .grids {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grids .gris {
+    grid-row: span 4;
+  }
+  .grids .rosas {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+  .grids .planti {
+    grid-column: span 1;
+  }
+}
+@media screen and (max-width: 610px) {
+  .acc h4 {
+    font-size: 3em;
+  }
+  .acc p {
+    font-size: 1em;
+  }
+  .titulo h4 {
+    font-size: 2em;
+  }
+  .grids {
+    grid-template-columns: 1fr;
+  }
+  .grids .gris {
+    grid-row: span 2;
+  }
+  .grids .rosas {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .grids .planti {
+    grid-column: span 1;
+  }
+}
+@media screen and (max-width: 436px) {
+  .acc h4 {
+    font-size: 2.5em;
+  }
+  .acc p {
+    font-size: 0.8em;
+  }
+  .titulo h4 {
+    font-size: 1.5em;
+  }
+  .grids {
+    grid-template-columns: 1fr;
+  }
+  .grids .gris {
+    grid-row: span 1;
+  }
+  .grids .rosas {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .grids .planti {
+    grid-column: span 1;
   }
 }
 

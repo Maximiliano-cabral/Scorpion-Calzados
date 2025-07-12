@@ -549,7 +549,7 @@
 @media screen and (max-width:860px) {
   .men {
     h2 {
-      font-size: 27px;
+      font-size: 20px;
     }
 
     p {
@@ -599,11 +599,11 @@
 
   .men {
     h2 {
-      font-size: 27px;
+      font-size: 17px;
     }
 
     p {
-      font-size: 10px;
+      font-size: 8px;
     }
   }
 
@@ -626,6 +626,12 @@
   }
 }
 @media screen and (max-width:524px) {
+  .men {
+    h2 {
+      font-size: 17px;
+      padding: 10px;
+    }
+  }
   .banner {
     img {
       width: 350px;
@@ -734,4 +740,99 @@
   }
 }
 }
-
+/* PAG ACCESORIOS */
+@media screen and (max-width:1212px) {
+  .acc {
+  h4{
+    font-size: 4em;
+  }
+  p{
+    font-size: 1.5em;
+  }
+}
+.grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 150px;
+  gap: 5px;
+}
+}
+@media screen and (max-width:944px) {
+  .acc {
+  h4{
+    font-size: 4em;
+  }
+  p{
+    font-size: 1.5em;
+  }
+}
+.grids {
+  grid-template-columns: 1fr 1fr;
+  .gris{
+    grid-row: span 4;
+  }
+  .rosas {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+  .planti{
+    grid-column: span 1;
+  }
+}
+}
+@media screen and (max-width:610px) {
+  .acc {
+  h4{
+    font-size: 3em;
+  }
+  p{
+    font-size: 1em;
+  }
+}
+.titulo {
+  h4{
+    font-size: 2em;
+  }  
+}
+.grids {
+  grid-template-columns: 1fr;
+  .gris{
+    grid-row: span 2;
+  }
+  .rosas {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .planti{
+    grid-column: span 1;
+  }
+}
+}
+@media screen and (max-width:436px) {
+  .acc {
+  h4{
+    font-size: 2.5em;
+  }
+  p{
+    font-size: 0.8em;
+  }
+}
+.titulo {
+  h4{
+    font-size: 1.5em;
+  }  
+}
+.grids {
+  grid-template-columns: 1fr;
+  .gris{
+    grid-row: span 1;
+  }
+  .rosas {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .planti{
+    grid-column: span 1;
+  }
+}
+}
