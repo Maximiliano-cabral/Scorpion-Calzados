@@ -1,5 +1,5 @@
 header {
-  background-color: #f9ebea;
+  background-color: $color-principal
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -8,10 +8,10 @@ header {
 
   a {
     text-decoration: none;
-    color: black;
+    color: $color-secundario
   }
 
   nav.navbar {
-    background-color: #f9ebea !important;
+    background-color: $color-principal !important;
   }
 }
