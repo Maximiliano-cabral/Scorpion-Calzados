@@ -7,13 +7,9 @@
     url(../img/hero-1.jpg);
   width: 100%;
   height: 720px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+@include background (no-repeat, cover, center);
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+@include flex (flex,center,center);
   flex-direction: column;
   flex-wrap: wrap;
 
@@ -48,9 +44,7 @@
 }
 
 .bienvenidos {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+@include flex (flex,space-evenly,center);
   margin: 35px;
 
   div {
@@ -72,7 +66,7 @@
     width: 450px;
     height: 550px;
     border-radius: 6px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    @include sombraimg (box-shadow);
   }
 }
 
@@ -134,15 +128,13 @@
   }
 
   .tarjetas {
-    display: flex;
-    justify-content: center;
+@include flex (flex, center, center);
     gap: 20px;
     margin-top: 2em;
 
     .tarjeta {
-      display: flex;
+@include flex (flex, center, center);
       flex-direction: column;
-      align-items: center;
       text-align: center;
       transition: 1s;
 
@@ -151,7 +143,7 @@
         height: 500px;
         border-radius: 10px;
         margin-bottom: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        @include sombraimg (box-shadow);
       }
 
       a {
@@ -179,14 +171,10 @@
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.445)), url(../img/mujer-pag.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+@include background (no-repeat, cover, center);
   object-fit: cover;
-  text-align: center;
-  display: flex;
+@include flex (flex, center, center);
   flex-direction: column;
-  justify-content: center;
   flex-wrap: wrap;
 
   h2 {
@@ -226,12 +214,11 @@
     text-align: center;
     font-size: 35px;
     padding: 20px;
-    color: black;
+    color: $color-secundario;
   }
 
   div {
-    display: flex;
-    justify-content: center;
+@include flex (flex, center, center);
     padding: 23px;
     gap: 25px;
     margin: 10px;
@@ -245,7 +232,7 @@
         width: 350px;
         height: 450px;
         border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        @include sombraimg (box-shadow);
       }
 
       a {
@@ -277,11 +264,8 @@
       rgba(0, 0, 0, 0.76) 100%
     ),
     url(../img/feet.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include background (no-repeat, cover, center);
+  @include flex (flex, center, center);
   flex-direction: column;
   object-fit: cover;
 
@@ -308,9 +292,8 @@
   }
 
   div {
-    display: flex;
+@include flex (flex, center, center);
     gap: 25px;
-    justify-content: center;
     padding: 15px;
 
     article {
@@ -349,8 +332,7 @@
 }
 
 .banner {
-  display: flex;
-  justify-content: center;
+@include flex (flex, center, center);
   margin-top: 14px;
   img {
     width: auto;
@@ -358,12 +340,11 @@
   }
 }
 .video {
-  width: 100vw;
+  width: 100%;
   height: 60vh;
   overflow: hidden;
-  margin: 40px;
-  display: flex;
-  justify-content: center;
+  margin: 40px 0%;
+@include flex (flex, center, center);
   iframe{
     width: 80%;
     height: 100%;
@@ -376,16 +357,14 @@
     margin-top: 2em;
   }
   .contenido-nosotros {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  @include flex (flex, center, center);
     margin: 2em;
     img {
       width: auto;
       height: 600px;
       border-radius: 15px;
       margin: 40px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      @include sombraimg (box-shadow);
     }
   }
   .texto {
@@ -408,7 +387,7 @@
     }
   }
   a:hover {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    @include sombraimg (box-shadow);
   }
 }
 .crecimiento {
@@ -425,9 +404,7 @@
     color: $color-cuaternario;
   }
   div {
-    display: flex;
-    justify-content: space-evenly;
-    justify-items: center;
+ @include flex (flex, space-evenly, center);
     h4 {
       margin: 10px;
       color: $color-cuaternario;
@@ -449,13 +426,10 @@
   height: 70vh;
   background-image: linear-gradient(to right, rgba(0, 0, 0) ,rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.623)), url(../img/shoes-.jpg); 
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+@include background (no-repeat, cover, center);
   object-fit: cover;
-  display: flex;
+@include flex (flex, center, center);
   flex-direction: column;
-  justify-content: center;
 
   h4{
     color: $color-cuaternario;

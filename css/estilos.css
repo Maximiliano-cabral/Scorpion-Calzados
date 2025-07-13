@@ -33,9 +33,9 @@ header nav.navbar {
   background-size: cover;
   background-position: center;
   text-align: center;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -143,13 +143,15 @@ header nav.navbar {
 .pro .tarjetas {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   margin-top: 2em;
 }
 .pro .tarjetas .tarjeta {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center;
   transition: 1s;
 }
@@ -182,13 +184,13 @@ header nav.navbar {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.445)), url(../img/mujer-pag.jpg);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-position: center;
   object-fit: cover;
-  text-align: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 .mujer h2 {
@@ -226,6 +228,7 @@ header nav.navbar {
 .productos div {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 23px;
   gap: 25px;
   margin: 10px;
@@ -261,6 +264,7 @@ header nav.navbar {
   height: 100vh;
   background-image: linear-gradient(90deg, rgba(20, 20, 20, 0.527) 0%, rgba(23, 24, 23, 0.664) 50%, rgba(0, 0, 0, 0.76) 100%), url(../img/feet.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
@@ -288,8 +292,9 @@ header nav.navbar {
 }
 .men-producto div {
   display: flex;
-  gap: 25px;
   justify-content: center;
+  align-items: center;
+  gap: 25px;
   padding: 15px;
 }
 .men-producto div article {
@@ -324,6 +329,7 @@ header nav.navbar {
 .banner {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 14px;
 }
 .banner img {
@@ -332,12 +338,13 @@ header nav.navbar {
 }
 
 .video {
-  width: 100vw;
+  width: 100%;
   height: 60vh;
   overflow: hidden;
-  margin: 40px;
+  margin: 40px 0%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .video iframe {
   width: 80%;
@@ -351,8 +358,8 @@ header nav.navbar {
 }
 .nosotros .contenido-nosotros {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin: 2em;
 }
 .nosotros .contenido-nosotros img {
@@ -397,7 +404,7 @@ header nav.navbar {
 .crecimiento div {
   display: flex;
   justify-content: space-evenly;
-  justify-items: center;
+  align-items: center;
 }
 .crecimiento div h4 {
   margin: 10px;
@@ -421,12 +428,13 @@ header nav.navbar {
   background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.623)), url(../img/shoes-.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-position: center;
   object-fit: cover;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .acc h4 {
   color: white;

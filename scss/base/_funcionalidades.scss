@@ -9,3 +9,17 @@ $color-cuaternario: white;
 // BOTONES HOVER 
 $color-quintuple: #7b4f3dd8;
 
+// MIXIN 
+@mixin flex ($flex, $justify, $align ){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin background ($background-repeat, $background-size, $background-position){
+    background-repeat: $background-repeat;
+    background-size: $background-size;
+    background-position: $background-position;
+}
+@mixin sombraimg ($box-shadow){
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
